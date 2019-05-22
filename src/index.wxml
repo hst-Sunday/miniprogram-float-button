@@ -1,0 +1,17 @@
+<view class="fly-out-button">
+  <view animation="{{textAnimation}}" class=" {{isOpen? 'mask': ''}}" style='opacity:0'></view>
+  <view style='z-index:999;'>
+    <block wx:for="{{floatButtonChildData}}" wx:key="*this.src">
+      <view animation="{{textAnimation}}" class='flyout-text' hidden="{{!isOpen}}" style='{{childAnimationData[index].textStyle}}'>{{item.content}}</view>
+      <view animation="{{childAnimationData[index].animation}}" class='children-button children-init-style' data-index="{{index}}" bindtap='_clickChildrenButton'>
+        <image src='{{item.src}}' class='float-button-child-img' />
+      </view>
+    </block>
+    <view class='float-button' bindtap='_toggle' style="right: {{right+'rpx'}};bottom: {{bottom+'rpx'}}">
+      <view class='main-button button-style'>
+        <!-- <icon animation="{{animationData}}" class='button-init-style' type="clear" size="100rpx" /> -->
+        <image animation="{{animationData}}" src='{{mainImg}}' class='button-init-style'/>
+      </view>
+    </view>
+  </view>
+</view>

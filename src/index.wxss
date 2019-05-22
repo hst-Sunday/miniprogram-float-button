@@ -1,0 +1,73 @@
+.float-button {
+  position: fixed;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* right: 100rpx;
+  bottom: 100rpx; */
+  z-index: 98;
+  box-sizing: border-box;
+}
+
+.children-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* right: 100rpx;
+  bottom: 100rpx; */
+  z-index: 90;
+  width: 100rpx;
+  height: 100rpx;
+  box-sizing: border-box;
+  background-color: white;
+  border: 2rpx solid #dddfe6;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.main-button {
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: white;
+}
+
+.button-init-style {
+  /* transform: rotate(45deg); */
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.children-init-style {
+  transform: scale(0.7) rotate(-45deg);
+}
+
+.flyout-text {
+  padding: 8rpx;
+  background-color: #9dd3a8;
+  border-radius: 12rpx;
+}
+
+.float-button-child-img {
+  width: 70rpx;
+  height: 70rpx;
+  
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 88;
+  opacity: 0;
+}
