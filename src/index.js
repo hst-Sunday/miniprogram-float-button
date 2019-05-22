@@ -164,6 +164,7 @@ Component({
       const index = e.currentTarget.dataset.index
       const childButtons = this.data.floatButtonChildData
       childButtons[index].onClick()
+      this._close()
     },
 
     __childrenButton(childrenIndex) {
