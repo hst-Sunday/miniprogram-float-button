@@ -1,0 +1,7 @@
+<comp 
+  bind:toggle='toggle' 
+  floatButtonChildData='{{floatButtonChildData}}' 
+  right="{{120}}" 
+  bottom="{{120}}" 
+  mainImg="{{mainImg}}"
+></comp>
